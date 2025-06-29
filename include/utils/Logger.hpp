@@ -17,4 +17,4 @@ public:
 	void static error(const std::string& message);
 };
 
-#endif LOGGER_HPP
+#endif // LOGGER_HPP

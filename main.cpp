@@ -30,7 +30,6 @@ int main(int argc , char* argv[]) {
         std::cout << "Unsupported Image format!" << std::endl;
     }
 
-   
 
     return 0;
 }
