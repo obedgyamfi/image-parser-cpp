@@ -1,0 +1,10 @@
+^C:\USERS\OBEDG\DOCUMENTS\PERSONAL\SOFTWARE ENGINEERING\PROJECTS\2024\IMAGE-PARSER-CPP\BUILD\CMAKEFILES\1ADA12CB6CA4986D39A8AB39E84D520C\GENERATE.STAMP.RULE
+setlocal
+C:\Users\obedg\scoop\apps\cmake\3.30.5\bin\cmake.exe "-SC:/Users/obedg/Documents/Personal/Software Engineering/Projects/2024/image-parser-cpp" "-BC:/Users/obedg/Documents/Personal/Software Engineering/Projects/2024/image-parser-cpp/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/obedg/Documents/Personal/Software Engineering/Projects/2024/image-parser-cpp/build/image-parser-cpp.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

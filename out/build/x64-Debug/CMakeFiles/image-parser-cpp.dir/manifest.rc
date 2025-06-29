@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/obedg/Documents/Personal/Software Engineering/Projects/2024/image-parser-cpp/out/build/x64-Debug/CMakeFiles/image-parser-cpp.dir/embed.manifest"

@@ -1,0 +1,3 @@
+C:/Users/obedg/Documents/Personal/Software Engineering/Projects/2024/image-parser-cpp/out/build/x64-Debug/CMakeFiles/image-parser-cpp.dir
+C:/Users/obedg/Documents/Personal/Software Engineering/Projects/2024/image-parser-cpp/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/obedg/Documents/Personal/Software Engineering/Projects/2024/image-parser-cpp/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
