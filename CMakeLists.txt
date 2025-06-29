@@ -18,4 +18,4 @@ file(GLOB_RECURSE SOURCES
 )
 
 # executable target 
-add_executable(image-parser-cpp ${SOURCES})
+add_executable(image-parser-cpp ${SOURCES} "src/utils/Logger.cpp")
