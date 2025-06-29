@@ -1,3 +1,0 @@
-C:/Users/obedg/Documents/Personal/Software Engineering/Projects/2024/image-parser-cpp/build/CMakeFiles/image-parser-cpp.dir
-C:/Users/obedg/Documents/Personal/Software Engineering/Projects/2024/image-parser-cpp/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/obedg/Documents/Personal/Software Engineering/Projects/2024/image-parser-cpp/build/CMakeFiles/ZERO_CHECK.dir
