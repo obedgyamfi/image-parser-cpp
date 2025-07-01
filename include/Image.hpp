@@ -21,8 +21,7 @@ public:
     Pixel getPixel(int x, int y) const;
     void setPixel(int x, int y, const Pixel& pixel);
 
-    void clear(Pixel fillColor = {0, 0, 0, 0}) {};
-
+    void clear(Pixel fillColor = {0, 0, 0, 0});
 private:
     int bitDepth, colorType;
     int width, height;

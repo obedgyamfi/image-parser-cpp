@@ -27,7 +27,8 @@ std::vector<unsigned char> ImageUtils::readImage_bytes(const std::string& imageP
     if(!image_file){
         std::cerr << "Error: Can't read image, Image not found!" << std::endl;
     }
-    
 
+    std::vector<unsigned char> imageBuffer;
 
+    return imageBuffer;
 }

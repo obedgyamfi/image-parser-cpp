@@ -12,7 +12,7 @@ std::vector<unsigned char> read(const std::string& filepath) {
     }
 }
 
-Image PngParser::parse(const std::vector<unsigned char>& imageBuffer) {
+// Image PngParser::parse(const std::vector<unsigned char>& imageBuffer) {
     
-}
+// }
 
