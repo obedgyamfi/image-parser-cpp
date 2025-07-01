@@ -23,12 +23,21 @@ bool ImageUtils::isSupportedFormat(const std::string& ext) {
 }
 
 std::vector<unsigned char> ImageUtils::readImage_bytes(const std::string& imagePath) {
-    std::ifstream image_file(imagePath, std::ios::binary);
-    if(!image_file){
-        std::cerr << "Error: Can't read image, Image not found!" << std::endl;
+    std::ifstream image_file(imagePath, std::ios::binary | std::ios::ate);
+    if(!image_file.is_open()){
+        std::cerr << "Error: Can't open image, Image not found!" << std::endl;
     }
+    
+    // getting the file size
+    std::streamsize fileSize = image_file.tellg();
+    image_file.seekg(0, std::ios::beg);
 
-    std::vector<unsigned char> imageBuffer;
+    // read all bytes into a vector
+    std::vector<unsigned char> imageBuffer(fileSize);
+    if(!image_file.read(reinterpret_cast<char*>(imageBuffer.data()), fileSize)){
+        std::cerr << "Error: Failed to read the image file!" << std::endl;
+        return {};
+    }
 
     return imageBuffer;
 }
