@@ -18,6 +18,7 @@ int main(int argc, char* argv[])
     }    
 
     std::string file_path = argv[2];
+    std::cout << "File path: " << file_path << std::endl;
 
     // Check if image file is valid
     if (!is_path_valid(file_path)){
@@ -34,11 +35,13 @@ int main(int argc, char* argv[])
 bool is_image(const std::string& filename){
     std::string ext = filename.substr(filename.find_last_of('.') + 1);
     std::transform(ext.begin(), ext.end(), ext.begin(), ::tolower);
+    std::cout << "Extension: " << ext << std::endl;
 
-    if(ext != "jpg" || ext != "jpeg" || ext != "bmp"){
+    if(ext != "jpg" && ext != "jpeg" && ext != "bmp"){
         std::cerr << "Error: Unsupported file extension" << std::endl;
-        return false;
+            return false;
     }
+    
     return is_bmp(filename) || is_jpeg(filename) || is_png(filename);
 }
 
@@ -85,5 +88,7 @@ bool is_jpeg(const std::string& filename){
     if(!file) return false;
     unsigned char header[2] = {0};
     file.read(reinterpret_cast<char*>(header), 2);
+
+    std::cout << "DEBUG: JPEG hex: " << header[0] << " " << header[1] << std::endl;
     return file.gcount() == 2 && header[0] == 0xFF && header[1] == 0xD8;
 }
