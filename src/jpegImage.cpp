@@ -51,7 +51,7 @@ bool JPEGImage::load(const std::string& filename) {
             file.read(reinterpret_cast<char*>(segment_length), 2);
             int length = (segment_length[0] << 8) + segment_length[1];
             if (length < 2) break;
-            file.seekg(length = 2, std::ios::cur);
+            file.seekg(length - 2, std::ios::cur);
         }
     }
 
